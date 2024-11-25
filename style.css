@@ -1,0 +1,417 @@
+@charset "UTF-8";
+
+body {
+    
+    
+    background-attachment: fixed;
+    font-family: "Open Sans", sans-serif;
+    color: #333333;
+    padding: 10px;
+    background-image: linear-gradient(
+        325deg,
+        hsl(0deg 0% 0%) 0%,
+        hsl(339deg 0% 0%) 8%,
+        hsl(339deg 0% 0%) 17%,
+        hsl(0deg 0% 0%) 25%,
+        hsl(344deg 0% 3%) 33%,
+        hsl(344deg 0% 6%) 42%,
+        hsl(0deg 0% 9%) 50%,
+        hsl(344deg 0% 6%) 58%,
+        hsl(344deg 0% 3%) 67%,
+        hsl(0deg 0% 0%) 75%,
+        hsl(339deg 0% 0%) 83%,
+        hsl(339deg 0% 0%) 92%,
+        hsl(0deg 0% 0%) 100%
+      );
+
+  background-repeat: no-repeat;
+  animation: backgroundbody 12s ease infinite;
+  
+  
+ 
+  }
+@keyframes backgroundbody {
+
+    0%{
+        background-image: linear-gradient(
+    320deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(339deg 0% 0%) 23%,
+    hsl(339deg 0% 0%) 35%,
+    hsl(0deg 0% 0%) 45%,
+    hsl(344deg 0% 3%) 54%,
+    hsl(344deg 0% 6%) 62%,
+    hsl(0deg 0% 9%) 69%,
+    hsl(344deg 0% 6%) 76%,
+    hsl(344deg 0% 3%) 82%,
+    hsl(0deg 0% 0%) 88%,
+    hsl(339deg 0% 0%) 93%,
+    hsl(339deg 0% 0%) 98%,
+    hsl(0deg 0% 0%) 100%
+  );
+    }
+    40%{
+        background-image: linear-gradient(
+    320deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(339deg 0% 0%) 5%,
+    hsl(339deg 0% 0%) 10%,
+    hsl(344deg 0% 1%) 16%,
+    hsl(344deg 0% 5%) 23%,
+    hsl(344deg 0% 8%) 31%,
+    hsl(344deg 0% 8%) 40%,
+    hsl(344deg 0% 5%) 50%,
+    hsl(344deg 0% 1%) 62%,
+    hsl(339deg 0% 0%) 74%,
+    hsl(339deg 0% 0%) 89%,
+    hsl(0deg 0% 0%) 100%
+  );
+  
+    }
+
+    80%{
+        background-image: linear-gradient(
+    320deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(339deg 0% 0%) 5%,
+    hsl(339deg 0% 0%) 10%,
+    hsl(344deg 0% 1%) 16%,
+    hsl(344deg 0% 5%) 25%,
+    hsl(344deg 0% 8%) 42%,
+    hsl(344deg 0% 8%) 60%,
+    hsl(344deg 0% 5%) 71%,
+    hsl(344deg 0% 1%) 80%,
+    hsl(339deg 0% 0%) 87%,
+    hsl(339deg 0% 0%) 94%,
+    hsl(0deg 0% 0%) 100%
+  );
+    }
+
+    90%{
+        background-image: linear-gradient(
+    320deg,
+    hsl(0deg 0% 0%) 14%,
+    hsl(339deg 0% 0%) 51%,
+    hsl(339deg 0% 0%) 65%,
+    hsl(0deg 0% 0%) 75%,
+    hsl(344deg 0% 3%) 82%,
+    hsl(344deg 0% 6%) 87%,
+    hsl(0deg 0% 9%) 92%,
+    hsl(344deg 0% 6%) 95%,
+    hsl(344deg 0% 3%) 98%,
+    hsl(0deg 0% 0%) 100%,
+    hsl(339deg 0% 0%) 101%,
+    hsl(339deg 0% 0%) 101%,
+    hsl(0deg 0% 0%) 100%
+  );
+    }
+    100%
+    {
+        background-image: linear-gradient(
+    0deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(339deg 0% 0%) 3%,
+    hsl(339deg 0% 0%) 7%,
+    hsl(344deg 0% 1%) 11%,
+    hsl(344deg 0% 5%) 17%,
+    hsl(344deg 0% 8%) 28%,
+    hsl(344deg 0% 8%) 67%,
+    hsl(344deg 0% 5%) 77%,
+    hsl(344deg 0% 1%) 84%,
+    hsl(339deg 0% 0%) 90%,
+    hsl(339deg 0% 0%) 95%,
+    hsl(0deg 0% 0%) 100%
+  );
+    }
+    
+}
+    
+
+
+  
+  .box-form {
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 100%;
+    align-items: stretch;
+    justify-content: space-between;
+  
+
+
+    background: rgba( 255, 255, 255, 0.01);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    
+   
+  }
+  
+  /*for animation */
+  @keyframes myAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateY(-250px);
+		transform:translate(360px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateY(-65px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateY(-28px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateY(-8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateY(0);
+	}
+}
+  
+  
+  
+  
+  @media (max-width: 980px) {
+    .box-form {
+      flex-flow: wrap;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      
+    }
+  }
+  .box-form div {
+    height: auto;
+   
+  }
+  .box-form .left {
+    color: #FFFFFF;
+    background-size: cover;
+    background: none;
+    overflow: hidden;
+   
+  }
+  .box-form .left .overlay {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    
+ /*	   background: #5961f9ad;*/
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .box-form .left .overlay h1 {
+    font-size: 8vmax;
+    line-height: 1;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .text
+  {
+
+    width:660px;
+  
+
+    color: #40d458; 
+    /* background-image: conic-gradient(from 135deg, #40d458 48%, #58d070 15%, #000000 93%);  */
+    /* background-image: conic-gradient(from 99deg, #40d458 58%, #58d070 85%, #000000 93%);  */
+    background-image: conic-gradient(from 99deg,  #7a864d 48%, #a89595 15%,  #71cabe 93%); 
+ 
+ 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+  
+     
+
+  }
+ 
+  
+  .trnsfm {
+   
+  position: relative;
+  left: 100%; 
+  animation: moveFromRight 2s forwards; 
+  animation-delay: 1s; 
+}
+
+@keyframes moveFromRight {
+  to {
+    left: 0; 
+  }
+}
+
+
+ /* for musi logo */
+  .logo
+  {
+    width:300px;
+    height:150px;
+    /* background: url(music-l.png); */
+    background: url(/images/musin-man-logo.png);
+    background-position:right;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    display: inline-block;
+ 
+    transition: transform 0.5s ease-in-out;
+
+    /* width: 300px;
+  height: 90px;
+  
+  background: url(music-logo.jpg) no-repeat center;
+  background-size: 100% 100%;
+ 
+  display: inline-block; */
+  }
+  .logo:hover {
+    
+    transform: translateY(-10px);
+    transform: translateY(-30px);
+  
+  }
+ 
+  
+  
+  
+  .box-form .right {
+    padding: 40px;
+    overflow: hidden;
+    background:hsl(0, 3%, 6%);
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  .box-form .right .acnt{
+    text-decoration: none;
+   
+    margin: 10px;
+    font-size: 15px;
+}
+.box-form .right .acnt:hover{
+    font-size: 17px;
+    color: #46afaa;
+}
+
+  @media (max-width: 980px) {
+    .box-form .right {
+      width: 100%;
+    }
+  }
+  .box-form .right h5 {
+  
+    font-size: 5vmax;
+    line-height: 0;
+  }
+  .box-form .right p {
+    font-size: 14px;
+    color: #B0B3B9;
+  }
+  .box-form .right .inputs {
+    overflow: hidden;
+    
+  }
+  .box-form .right input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #B0B3B9;
+   text-align: center;
+   color:white;
+  }
+  .inp{
+    /* background: rgb(24, 21, 21); */
+    background: none;
+    border-radius: 20px;
+  }
+    
+  
+  .box-form .right .remember-me--forget-password {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box-form .right .remember-me--forget-password input {
+    margin: 0;
+    margin-right: 7px;
+    width: auto;
+  }
+  .box-form .right .remember-me--forget-password , .fgtpsd
+  {
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .box-form .right .remember-me--forget-password , .fgtpsd:hover
+  {
+    text-decoration: none;
+    color: rgb(54, 165, 159);
+  }
+
+ .btn{
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 12px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 4px 22px 0px #7b8d29a6;
+    background-image: linear-gradient(135deg, #0fda9d 10%, #71d6a7 100%);
+  }
+  .btn:hover
+  {
+    opacity: 0.7;
+  }
+  
+  
+  #msg
+  {
+  	color:white;
+  	font-weight:bold;
+  }
+/*for showing therror message */
+  .err {
+  
+  font-size:26px;
+  position: relative;
+  left: 100%; 
+  animation: anime 2s forwards; 
+  animation-delay: 0.5s; 
+}
+@keyframes anime {
+  to {
+    left: 0; 
+  }
+}      

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	<meta charset="UTF-8">
+	<title>Index Page</title>
+	<link rel="stylesheet" href="style.css"/>
+	</head>
+		<body>
+			<div class="box-form">
+            <div class="left">
+                <div class="overlay">
+                <h1 class="text">Spotesso</h1>
+                <span class="logo">
+                   
+                   
+                </span>
+                <p class="trnsfm">A Musical App 
+                </p>
+                
+                
+                <p th:if="${msg != null}" th:text="${msg}" id="msg"  class="err"></p>
+                </div>
+            </div>
+
+            <div class="right">
+                <form action="/login" method="post">
+                    <h5>Login</h5>
+                    
+                    <p>Don't have an account? <a href="/openSignUp" class="acnt">Create New Account</a> it takes less than a minute</p>
+                    <div class="inputs">
+                        
+                        <input type="text" name="username" placeholder="username " class="inp"> 
+                        <input type="password" name="password" placeholder="password" class="inp">
+                    </div>
+
+
+                    <div class="remember-me--forget-password">
+                        
+                        <label>
+                            <input type="checkbox" name="item" checked/>
+                            <span class="text-checkbox">Remember me</span>
+                        </label>
+                        <a href="/openResetPassword" class="fgtpsd">Forgot Password</a>
+
+                        
+                    </div>
+                    <input type="submit" value="LOGIN" class="btn">
+                 </form>
+					 
+            </div>
+           
+        </div>
+		</body>
+</html>
